@@ -13,7 +13,7 @@ pipeline {
                         bat 'npm start'
                     },
                     'npm run server': {
-                        bat 'npx json-server db.json'
+                        bat 'npx json-server db.json --port 8000'
                     }
                 )                    
             }             
