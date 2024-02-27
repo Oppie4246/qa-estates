@@ -9,10 +9,8 @@ pipeline {
             }
         }
         stage('Deploy') {
-            steps {
-                a: {
-                    bat 'npm run preview'
-                }
+            steps {                
+                bat 'npm run preview'       
             }
         }
     }
