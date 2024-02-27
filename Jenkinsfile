@@ -16,8 +16,7 @@ pipeline {
                         bat 'npx json-server db.json --port 8000'
                     }
                 )                    
-            }             
-                   
+            }                   
         }
     }
 }
