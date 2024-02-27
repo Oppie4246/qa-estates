@@ -5,6 +5,7 @@ pipeline {
             steps {                
                 bat 'npm install'
                 bat 'npm start'
+                bat 'npx json-server db.json'
             }
         }
         stage('Deploy') {
@@ -12,9 +13,6 @@ pipeline {
                 a: {
                     bat 'npm run preview'
                 }
-                b: {
-                    bat 'npx json-server db.json'
-                }                
             }
         }
     }
